@@ -1,0 +1,23 @@
+PODS:
+  - TableViewReuse (0.2.0)
+  - UITableViewAgent (0.1.0):
+    - TableViewReuse (~> 0.2.0)
+
+DEPENDENCIES:
+  - UITableViewAgent (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - TableViewReuse
+
+EXTERNAL SOURCES:
+  UITableViewAgent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TableViewReuse: 69f1244fb7729c9ca98d03ad2e426eb52ce16389
+  UITableViewAgent: 53bb7d3f6ff944b6c2c78a2ea46f47cc3a1a263a
+
+PODFILE CHECKSUM: 0b19eea5935aa03afdcd529a7172f13570a3d3b1
+
+COCOAPODS: 1.10.1

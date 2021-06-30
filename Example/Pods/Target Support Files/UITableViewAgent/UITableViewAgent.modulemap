@@ -1,0 +1,6 @@
+framework module UITableViewAgent {
+  umbrella header "UITableViewAgent-umbrella.h"
+
+  export *
+  module * { export * }
+}

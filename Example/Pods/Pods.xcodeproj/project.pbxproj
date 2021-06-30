@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC143ECCF4B8467F2DC021E1D93FB47 /* UITableViewDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5DDA50E383103F28A5F3044DA7CDE /* UITableViewDisplay.swift */; };
+		58F5803FE33D6DC63FB25B6B00E7885B /* TableViewReuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795C5849AF011683CA6A921BF3674639 /* TableViewReuse.framework */; };
+		5D53AC3510AF1719A2AAEB83A5CCA3BF /* UITableViewReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5256292372C53A66CAF901C323454EF /* UITableViewReuse.swift */; };
+		674352DB8DDBE76E79D08F10DDBEC679 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26D47F61156677E6ED3EE92079657A4 /* Foundation.framework */; };
+		809EC0C2C05885D742821647D8A01D02 /* Pods-UITableViewAgent_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C086EDD0E5DEE6AB81C5E42B31161A56 /* Pods-UITableViewAgent_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86679D6E3C4EEE655E1D2590E04ABAFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26D47F61156677E6ED3EE92079657A4 /* Foundation.framework */; };
+		8891AA0380DB20DEC796D01F096F43B1 /* UITableViewAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB96BFB22A9919BFE2676C27A08B32 /* UITableViewAgent.swift */; };
+		8DA35938EB6970A92097AA10FCDEE59A /* TableViewReuse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F66E35B297A1E028F455DC09246E763 /* TableViewReuse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		981FBA4F350A13666CBA5BAAFCEE9663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26D47F61156677E6ED3EE92079657A4 /* Foundation.framework */; };
+		A70C10B784EECB4B568F0272BF3527C5 /* Pods-UITableViewAgent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D365A64485F45C18035B064B24691411 /* Pods-UITableViewAgent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6F49CC7C1507FC7B673B18186EDCCD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB28B90E48635C3369FB3B170ADC6B3 /* UIKit.framework */; };
+		B940E44741E9C6301D81DA57A1A297FE /* UITableView+Reuse.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CD61FFB974BB4F2658DD84C4C8D13D /* UITableView+Reuse.m */; };
+		BD540188260C48E4A902C8FC245D2258 /* UITableView+Reuse.h in Headers */ = {isa = PBXBuildFile; fileRef = 41CCB87A94A91CC51E612024DB227C65 /* UITableView+Reuse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD9FE76BE8EEAE1C3826522D7BE2AB28 /* Pods-UITableViewAgent_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFB8F740D95A648C740138953C2492 /* Pods-UITableViewAgent_Example-dummy.m */; };
+		BDF464A3E45D7A3CFDD0F47C1F345D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26D47F61156677E6ED3EE92079657A4 /* Foundation.framework */; };
+		C16D9EBB8AA6849A483976789C47070C /* Pods-UITableViewAgent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 772C8468B072D20C9CD39C0393956C01 /* Pods-UITableViewAgent_Tests-dummy.m */; };
+		C28813C9CD56B79EAF49629C8B84DB4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB28B90E48635C3369FB3B170ADC6B3 /* UIKit.framework */; };
+		C95162177F7A9EE2688AC680BDFFA488 /* UITableViewAgent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52443E3A15EF2E44BC87C10B5E4780B5 /* UITableViewAgent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCE39ED8F3D99749CBE8E96C66D68ED9 /* UITableViewAgent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD78DBE62CDFE626B164F93691C2EA5F /* UITableViewAgent-dummy.m */; };
+		DAEF3416E35AAB079E49F3191E7FA0B0 /* TableViewReuse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA72D4527662952961D419368044A95F /* TableViewReuse-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		311F97B5326093C0B6BE06238F943DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8491F62123FCDAAE6BDB5247A5898849;
+			remoteInfo = "Pods-UITableViewAgent_Example";
+		};
+		40C8B5BC9C79EFCDCE7809B2AAFA7F72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 622214B9F3D33E3368662F77088849B3;
+			remoteInfo = TableViewReuse;
+		};
+		C619935B3EB3FD93C53B6DE76EBEAC73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 622214B9F3D33E3368662F77088849B3;
+			remoteInfo = TableViewReuse;
+		};
+		E22E148AF13B3803AD69B06231D0F989 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 805A10C6048B1B696DE969E8A7E30C89;
+			remoteInfo = UITableViewAgent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01267212B8947BAC51E0DCD69A840C6A /* Pods-UITableViewAgent_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UITableViewAgent_Example-frameworks.sh"; sourceTree = "<group>"; };
+		016391D88616A01FF6FE61FB729620B5 /* TableViewReuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewReuse.debug.xcconfig; sourceTree = "<group>"; };
+		01A9F6B08CB7C72710A7EEC42EB3E5A3 /* Pods-UITableViewAgent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UITableViewAgent_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		06C9BB005FFCB657A8CA6F3733BFB857 /* TableViewReuse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TableViewReuse.modulemap; sourceTree = "<group>"; };
+		0FEB96BFB22A9919BFE2676C27A08B32 /* UITableViewAgent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewAgent.swift; path = UITableViewAgent/Classes/UITableViewAgent.swift; sourceTree = "<group>"; };
+		1357253FD9C8B5085D1BCCC9355AE59B /* UITableViewAgent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewAgent-prefix.pch"; sourceTree = "<group>"; };
+		1BA08556905108C03959046F1C7ED37D /* Pods-UITableViewAgent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UITableViewAgent_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1EE8F91629A955D89A7E1754DE9F5970 /* Pods-UITableViewAgent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UITableViewAgent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		22EFB8F740D95A648C740138953C2492 /* Pods-UITableViewAgent_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UITableViewAgent_Example-dummy.m"; sourceTree = "<group>"; };
+		2988E9C2D1AB0A1650689445E0A6D4D5 /* UITableViewAgent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UITableViewAgent.debug.xcconfig; sourceTree = "<group>"; };
+		2AA5B3530A9EC0A2F30A019EDBFA82A5 /* UITableViewAgent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UITableViewAgent.release.xcconfig; sourceTree = "<group>"; };
+		3205E8366129D2872FB1F55296C2D901 /* Pods_UITableViewAgent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITableViewAgent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3981D608547F74527264CB4BFFBFBB46 /* Pods-UITableViewAgent_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UITableViewAgent_Example.modulemap"; sourceTree = "<group>"; };
+		3C9E1D8DB7E16640A679FFAE12C47E7C /* TableViewReuse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewReuse-prefix.pch"; sourceTree = "<group>"; };
+		3F66E35B297A1E028F455DC09246E763 /* TableViewReuse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewReuse-umbrella.h"; sourceTree = "<group>"; };
+		41CCB87A94A91CC51E612024DB227C65 /* UITableView+Reuse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+Reuse.h"; path = "TableViewReuse/Classes/UITableView+Reuse.h"; sourceTree = "<group>"; };
+		442C8E106C70B07451BEF5CE663E38F9 /* Pods-UITableViewAgent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UITableViewAgent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		52443E3A15EF2E44BC87C10B5E4780B5 /* UITableViewAgent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewAgent-umbrella.h"; sourceTree = "<group>"; };
+		6416E1DEA6CF393FE5F181FBFF7BCD33 /* Pods-UITableViewAgent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UITableViewAgent_Example.release.xcconfig"; sourceTree = "<group>"; };
+		761B9EC0DCB7AD5CE5E71FD8A481196F /* Pods-UITableViewAgent_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UITableViewAgent_Example-Info.plist"; sourceTree = "<group>"; };
+		772C8468B072D20C9CD39C0393956C01 /* Pods-UITableViewAgent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UITableViewAgent_Tests-dummy.m"; sourceTree = "<group>"; };
+		795C5849AF011683CA6A921BF3674639 /* TableViewReuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableViewReuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A9CB15FE2C7B33409F91F37DE28588 /* UITableViewAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITableViewAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB28B90E48635C3369FB3B170ADC6B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ED5DDA50E383103F28A5F3044DA7CDE /* UITableViewDisplay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewDisplay.swift; path = UITableViewAgent/Classes/UITableViewDisplay.swift; sourceTree = "<group>"; };
+		AA72D4527662952961D419368044A95F /* TableViewReuse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableViewReuse-dummy.m"; sourceTree = "<group>"; };
+		AD78DBE62CDFE626B164F93691C2EA5F /* UITableViewAgent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewAgent-dummy.m"; sourceTree = "<group>"; };
+		B23A83A323851A9358F728547170A22D /* UITableViewAgent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UITableViewAgent.modulemap; sourceTree = "<group>"; };
+		B97BD6722342C6316FD83E64F68B3499 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BD6F29D25C52FF334B7B3C8ED22AD4A0 /* TableViewReuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewReuse.release.xcconfig; sourceTree = "<group>"; };
+		BED63ADD759FC7051F2F0FCFAF1ABE0E /* Pods-UITableViewAgent_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UITableViewAgent_Tests-Info.plist"; sourceTree = "<group>"; };
+		C086EDD0E5DEE6AB81C5E42B31161A56 /* Pods-UITableViewAgent_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UITableViewAgent_Example-umbrella.h"; sourceTree = "<group>"; };
+		C1772B370C41757A8815969615A0A48F /* TableViewReuse-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TableViewReuse-Info.plist"; sourceTree = "<group>"; };
+		C26D47F61156677E6ED3EE92079657A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C377E864CF75F0F96CB8AB6AB84EC756 /* Pods-UITableViewAgent_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UITableViewAgent_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CAE30EBC7DBED9B89971DD588C340FFF /* Pods-UITableViewAgent_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UITableViewAgent_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF0CE058B8819BE0EA769240EF0433DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D365A64485F45C18035B064B24691411 /* Pods-UITableViewAgent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UITableViewAgent_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D5256292372C53A66CAF901C323454EF /* UITableViewReuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewReuse.swift; path = TableViewReuse/Classes/UITableViewReuse.swift; sourceTree = "<group>"; };
+		D58213C3CFCF61FDFBC78DA077E2807A /* UITableViewAgent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UITableViewAgent-Info.plist"; sourceTree = "<group>"; };
+		DD7FD586A1EAAE54788392DF2D006B7C /* Pods_UITableViewAgent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITableViewAgent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33667C87CA89FE971446C2113E1CD3B /* Pods-UITableViewAgent_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UITableViewAgent_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E7F6C25EE7DA3438E5F783C032400B0A /* UITableViewAgent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = UITableViewAgent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F2CD61FFB974BB4F2658DD84C4C8D13D /* UITableView+Reuse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Reuse.m"; path = "TableViewReuse/Classes/UITableView+Reuse.m"; sourceTree = "<group>"; };
+		F527401AC894DDF5F8CB9FF0C2C406FC /* TableViewReuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableViewReuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5972D95E8E2278E6EB95808FC36835D /* Pods-UITableViewAgent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UITableViewAgent_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F6929623851EB37D0CC58E851DC7DF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF464A3E45D7A3CFDD0F47C1F345D38 /* Foundation.framework in Frameworks */,
+				B6F49CC7C1507FC7B673B18186EDCCD0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B3FABFC5E5358A66F37B488031C54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86679D6E3C4EEE655E1D2590E04ABAFB /* Foundation.framework in Frameworks */,
+				58F5803FE33D6DC63FB25B6B00E7885B /* TableViewReuse.framework in Frameworks */,
+				C28813C9CD56B79EAF49629C8B84DB4F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC157FD66E31BBC5C938B95BC9879CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674352DB8DDBE76E79D08F10DDBEC679 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD324EAF57DC1276686AD87A492DC8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981FBA4F350A13666CBA5BAAFCEE9663 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29475EC6AAAFD6BFA8431B1DF54E9B62 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C0FE480DB9907F7E6CBB1CAB2229126 /* Pods-UITableViewAgent_Example */,
+				A9A251894BD402C1897359EBE21EEF92 /* Pods-UITableViewAgent_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2CAB4C0A382F8221DA86AB3DD4BBDE9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				795C5849AF011683CA6A921BF3674639 /* TableViewReuse.framework */,
+				87862A6FDAB81414E0B362B818CC44A3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FFF2108D0CAB3595ED9CE7761113B4A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B23A83A323851A9358F728547170A22D /* UITableViewAgent.modulemap */,
+				AD78DBE62CDFE626B164F93691C2EA5F /* UITableViewAgent-dummy.m */,
+				D58213C3CFCF61FDFBC78DA077E2807A /* UITableViewAgent-Info.plist */,
+				1357253FD9C8B5085D1BCCC9355AE59B /* UITableViewAgent-prefix.pch */,
+				52443E3A15EF2E44BC87C10B5E4780B5 /* UITableViewAgent-umbrella.h */,
+				2988E9C2D1AB0A1650689445E0A6D4D5 /* UITableViewAgent.debug.xcconfig */,
+				2AA5B3530A9EC0A2F30A019EDBFA82A5 /* UITableViewAgent.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/UITableViewAgent";
+			sourceTree = "<group>";
+		};
+		6D4227472115665AAC18FDE1A5B7341A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06C9BB005FFCB657A8CA6F3733BFB857 /* TableViewReuse.modulemap */,
+				AA72D4527662952961D419368044A95F /* TableViewReuse-dummy.m */,
+				C1772B370C41757A8815969615A0A48F /* TableViewReuse-Info.plist */,
+				3C9E1D8DB7E16640A679FFAE12C47E7C /* TableViewReuse-prefix.pch */,
+				3F66E35B297A1E028F455DC09246E763 /* TableViewReuse-umbrella.h */,
+				016391D88616A01FF6FE61FB729620B5 /* TableViewReuse.debug.xcconfig */,
+				BD6F29D25C52FF334B7B3C8ED22AD4A0 /* TableViewReuse.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TableViewReuse";
+			sourceTree = "<group>";
+		};
+		74CE97261BFD0D5D5F4F58AB34F41A48 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CF0CE058B8819BE0EA769240EF0433DB /* LICENSE */,
+				B97BD6722342C6316FD83E64F68B3499 /* README.md */,
+				E7F6C25EE7DA3438E5F783C032400B0A /* UITableViewAgent.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7C0FE480DB9907F7E6CBB1CAB2229126 /* Pods-UITableViewAgent_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3981D608547F74527264CB4BFFBFBB46 /* Pods-UITableViewAgent_Example.modulemap */,
+				E33667C87CA89FE971446C2113E1CD3B /* Pods-UITableViewAgent_Example-acknowledgements.markdown */,
+				CAE30EBC7DBED9B89971DD588C340FFF /* Pods-UITableViewAgent_Example-acknowledgements.plist */,
+				22EFB8F740D95A648C740138953C2492 /* Pods-UITableViewAgent_Example-dummy.m */,
+				01267212B8947BAC51E0DCD69A840C6A /* Pods-UITableViewAgent_Example-frameworks.sh */,
+				761B9EC0DCB7AD5CE5E71FD8A481196F /* Pods-UITableViewAgent_Example-Info.plist */,
+				C086EDD0E5DEE6AB81C5E42B31161A56 /* Pods-UITableViewAgent_Example-umbrella.h */,
+				1BA08556905108C03959046F1C7ED37D /* Pods-UITableViewAgent_Example.debug.xcconfig */,
+				6416E1DEA6CF393FE5F181FBFF7BCD33 /* Pods-UITableViewAgent_Example.release.xcconfig */,
+			);
+			name = "Pods-UITableViewAgent_Example";
+			path = "Target Support Files/Pods-UITableViewAgent_Example";
+			sourceTree = "<group>";
+		};
+		86D2A7E4FC4AAC00ECC969C4A99E19A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3205E8366129D2872FB1F55296C2D901 /* Pods_UITableViewAgent_Example.framework */,
+				DD7FD586A1EAAE54788392DF2D006B7C /* Pods_UITableViewAgent_Tests.framework */,
+				F527401AC894DDF5F8CB9FF0C2C406FC /* TableViewReuse.framework */,
+				95A9CB15FE2C7B33409F91F37DE28588 /* UITableViewAgent.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87862A6FDAB81414E0B362B818CC44A3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C26D47F61156677E6ED3EE92079657A4 /* Foundation.framework */,
+				9AB28B90E48635C3369FB3B170ADC6B3 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		90211DBE48F2D156A665B15050F67AE6 /* UITableViewAgent */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB96BFB22A9919BFE2676C27A08B32 /* UITableViewAgent.swift */,
+				9ED5DDA50E383103F28A5F3044DA7CDE /* UITableViewDisplay.swift */,
+				74CE97261BFD0D5D5F4F58AB34F41A48 /* Pod */,
+				2FFF2108D0CAB3595ED9CE7761113B4A /* Support Files */,
+			);
+			name = UITableViewAgent;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A612553AFC23D1BD0320C564DF51E7FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B098E3BA151227844D33A8E70E7806C3 /* TableViewReuse */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9A251894BD402C1897359EBE21EEF92 /* Pods-UITableViewAgent_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5972D95E8E2278E6EB95808FC36835D /* Pods-UITableViewAgent_Tests.modulemap */,
+				C377E864CF75F0F96CB8AB6AB84EC756 /* Pods-UITableViewAgent_Tests-acknowledgements.markdown */,
+				1EE8F91629A955D89A7E1754DE9F5970 /* Pods-UITableViewAgent_Tests-acknowledgements.plist */,
+				772C8468B072D20C9CD39C0393956C01 /* Pods-UITableViewAgent_Tests-dummy.m */,
+				BED63ADD759FC7051F2F0FCFAF1ABE0E /* Pods-UITableViewAgent_Tests-Info.plist */,
+				D365A64485F45C18035B064B24691411 /* Pods-UITableViewAgent_Tests-umbrella.h */,
+				442C8E106C70B07451BEF5CE663E38F9 /* Pods-UITableViewAgent_Tests.debug.xcconfig */,
+				01A9F6B08CB7C72710A7EEC42EB3E5A3 /* Pods-UITableViewAgent_Tests.release.xcconfig */,
+			);
+			name = "Pods-UITableViewAgent_Tests";
+			path = "Target Support Files/Pods-UITableViewAgent_Tests";
+			sourceTree = "<group>";
+		};
+		B098E3BA151227844D33A8E70E7806C3 /* TableViewReuse */ = {
+			isa = PBXGroup;
+			children = (
+				41CCB87A94A91CC51E612024DB227C65 /* UITableView+Reuse.h */,
+				F2CD61FFB974BB4F2658DD84C4C8D13D /* UITableView+Reuse.m */,
+				D5256292372C53A66CAF901C323454EF /* UITableViewReuse.swift */,
+				6D4227472115665AAC18FDE1A5B7341A /* Support Files */,
+			);
+			path = TableViewReuse;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DFF36EABFFBB8978870D8D1649541944 /* Development Pods */,
+				2CAB4C0A382F8221DA86AB3DD4BBDE9A /* Frameworks */,
+				A612553AFC23D1BD0320C564DF51E7FC /* Pods */,
+				86D2A7E4FC4AAC00ECC969C4A99E19A4 /* Products */,
+				29475EC6AAAFD6BFA8431B1DF54E9B62 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DFF36EABFFBB8978870D8D1649541944 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90211DBE48F2D156A665B15050F67AE6 /* UITableViewAgent */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11A9C018242526C80CA57C3BC3AFB547 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95162177F7A9EE2688AC680BDFFA488 /* UITableViewAgent-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		770ED1280E7F75C917A4768578C58B60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809EC0C2C05885D742821647D8A01D02 /* Pods-UITableViewAgent_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82636BC0532D327BB28B345A8C8114C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70C10B784EECB4B568F0272BF3527C5 /* Pods-UITableViewAgent_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A364D87BC2D9FE7BFF82A333D0B2D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA35938EB6970A92097AA10FCDEE59A /* TableViewReuse-umbrella.h in Headers */,
+				BD540188260C48E4A902C8FC245D2258 /* UITableView+Reuse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28B24A5C32D0230A79BCB48999251557 /* Pods-UITableViewAgent_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED4A9BCB20B2E80FD3D2ED616C84FFB /* Build configuration list for PBXNativeTarget "Pods-UITableViewAgent_Tests" */;
+			buildPhases = (
+				82636BC0532D327BB28B345A8C8114C6 /* Headers */,
+				120A996740C3B2F86EC2442B0937A3F1 /* Sources */,
+				FD324EAF57DC1276686AD87A492DC8EF /* Frameworks */,
+				33DCAC98C94C11AE46F96D68A6BAD259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD81FBAF276BDA92BF9A4ECFF00B58D1 /* PBXTargetDependency */,
+			);
+			name = "Pods-UITableViewAgent_Tests";
+			productName = "Pods-UITableViewAgent_Tests";
+			productReference = DD7FD586A1EAAE54788392DF2D006B7C /* Pods_UITableViewAgent_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		622214B9F3D33E3368662F77088849B3 /* TableViewReuse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2B6D6A437ACC359075575F9E3AFFA6 /* Build configuration list for PBXNativeTarget "TableViewReuse" */;
+			buildPhases = (
+				97A364D87BC2D9FE7BFF82A333D0B2D8 /* Headers */,
+				33B84813E393E237098F93B6FE713427 /* Sources */,
+				5F6929623851EB37D0CC58E851DC7DF5 /* Frameworks */,
+				5F09AD71712AA5A894275392AC00CBF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewReuse;
+			productName = TableViewReuse;
+			productReference = F527401AC894DDF5F8CB9FF0C2C406FC /* TableViewReuse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		805A10C6048B1B696DE969E8A7E30C89 /* UITableViewAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C8199A8D7244C7C06B9AAD3FC19239F /* Build configuration list for PBXNativeTarget "UITableViewAgent" */;
+			buildPhases = (
+				11A9C018242526C80CA57C3BC3AFB547 /* Headers */,
+				ABE65B6C9455E2364B8CF1CC1D94D6C1 /* Sources */,
+				B1B3FABFC5E5358A66F37B488031C54A /* Frameworks */,
+				9D78DD45A29D67D41F84850EEE1EFE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B61EF1153AD289DF358E436885E508E /* PBXTargetDependency */,
+			);
+			name = UITableViewAgent;
+			productName = UITableViewAgent;
+			productReference = 95A9CB15FE2C7B33409F91F37DE28588 /* UITableViewAgent.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8491F62123FCDAAE6BDB5247A5898849 /* Pods-UITableViewAgent_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9427240432E3DF8B31D816019A65E6F4 /* Build configuration list for PBXNativeTarget "Pods-UITableViewAgent_Example" */;
+			buildPhases = (
+				770ED1280E7F75C917A4768578C58B60 /* Headers */,
+				CA2DD74AA48BCB54355FB91DBD32C32B /* Sources */,
+				CC157FD66E31BBC5C938B95BC9879CBC /* Frameworks */,
+				00C9773CAF1CA3E9E7D1B406A13DF960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3547EFD43F989FF4306FAC847EF9C3FE /* PBXTargetDependency */,
+				BCB71252ABD5E759B5B7513067BD2E35 /* PBXTargetDependency */,
+			);
+			name = "Pods-UITableViewAgent_Example";
+			productName = "Pods-UITableViewAgent_Example";
+			productReference = 3205E8366129D2872FB1F55296C2D901 /* Pods_UITableViewAgent_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 86D2A7E4FC4AAC00ECC969C4A99E19A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8491F62123FCDAAE6BDB5247A5898849 /* Pods-UITableViewAgent_Example */,
+				28B24A5C32D0230A79BCB48999251557 /* Pods-UITableViewAgent_Tests */,
+				622214B9F3D33E3368662F77088849B3 /* TableViewReuse */,
+				805A10C6048B1B696DE969E8A7E30C89 /* UITableViewAgent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00C9773CAF1CA3E9E7D1B406A13DF960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DCAC98C94C11AE46F96D68A6BAD259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F09AD71712AA5A894275392AC00CBF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D78DD45A29D67D41F84850EEE1EFE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		120A996740C3B2F86EC2442B0937A3F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16D9EBB8AA6849A483976789C47070C /* Pods-UITableViewAgent_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B84813E393E237098F93B6FE713427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAEF3416E35AAB079E49F3191E7FA0B0 /* TableViewReuse-dummy.m in Sources */,
+				B940E44741E9C6301D81DA57A1A297FE /* UITableView+Reuse.m in Sources */,
+				5D53AC3510AF1719A2AAEB83A5CCA3BF /* UITableViewReuse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE65B6C9455E2364B8CF1CC1D94D6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE39ED8F3D99749CBE8E96C66D68ED9 /* UITableViewAgent-dummy.m in Sources */,
+				8891AA0380DB20DEC796D01F096F43B1 /* UITableViewAgent.swift in Sources */,
+				0DC143ECCF4B8467F2DC021E1D93FB47 /* UITableViewDisplay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2DD74AA48BCB54355FB91DBD32C32B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9FE76BE8EEAE1C3826522D7BE2AB28 /* Pods-UITableViewAgent_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B61EF1153AD289DF358E436885E508E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TableViewReuse;
+			target = 622214B9F3D33E3368662F77088849B3 /* TableViewReuse */;
+			targetProxy = 40C8B5BC9C79EFCDCE7809B2AAFA7F72 /* PBXContainerItemProxy */;
+		};
+		3547EFD43F989FF4306FAC847EF9C3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TableViewReuse;
+			target = 622214B9F3D33E3368662F77088849B3 /* TableViewReuse */;
+			targetProxy = C619935B3EB3FD93C53B6DE76EBEAC73 /* PBXContainerItemProxy */;
+		};
+		BCB71252ABD5E759B5B7513067BD2E35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UITableViewAgent;
+			target = 805A10C6048B1B696DE969E8A7E30C89 /* UITableViewAgent */;
+			targetProxy = E22E148AF13B3803AD69B06231D0F989 /* PBXContainerItemProxy */;
+		};
+		CD81FBAF276BDA92BF9A4ECFF00B58D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UITableViewAgent_Example";
+			target = 8491F62123FCDAAE6BDB5247A5898849 /* Pods-UITableViewAgent_Example */;
+			targetProxy = 311F97B5326093C0B6BE06238F943DE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14A803D208CCA191A347B0EC28B35F76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016391D88616A01FF6FE61FB729620B5 /* TableViewReuse.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TableViewReuse/TableViewReuse-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TableViewReuse/TableViewReuse-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TableViewReuse/TableViewReuse.modulemap";
+				PRODUCT_MODULE_NAME = TableViewReuse;
+				PRODUCT_NAME = TableViewReuse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		32E43CF6876D7096C5A9EF24B6DE281B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442C8E106C70B07451BEF5CE663E38F9 /* Pods-UITableViewAgent_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UITableViewAgent_Tests/Pods-UITableViewAgent_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UITableViewAgent_Tests/Pods-UITableViewAgent_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FFB21BA7130D1E0D43C7B3981A2FBD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2988E9C2D1AB0A1650689445E0A6D4D5 /* UITableViewAgent.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UITableViewAgent/UITableViewAgent-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UITableViewAgent/UITableViewAgent-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UITableViewAgent/UITableViewAgent.modulemap";
+				PRODUCT_MODULE_NAME = UITableViewAgent;
+				PRODUCT_NAME = UITableViewAgent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B12A3054240709D9CFB8AA9BEED7EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A9F6B08CB7C72710A7EEC42EB3E5A3 /* Pods-UITableViewAgent_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UITableViewAgent_Tests/Pods-UITableViewAgent_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UITableViewAgent_Tests/Pods-UITableViewAgent_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2BB4EE3FCC285E9E86231433A6E48EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA08556905108C03959046F1C7ED37D /* Pods-UITableViewAgent_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UITableViewAgent_Example/Pods-UITableViewAgent_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UITableViewAgent_Example/Pods-UITableViewAgent_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E801D03216BB097CFB902FA3B11E8464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6F29D25C52FF334B7B3C8ED22AD4A0 /* TableViewReuse.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TableViewReuse/TableViewReuse-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TableViewReuse/TableViewReuse-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TableViewReuse/TableViewReuse.modulemap";
+				PRODUCT_MODULE_NAME = TableViewReuse;
+				PRODUCT_NAME = TableViewReuse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBC05F3AA7039738ADC59D5A84587D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6416E1DEA6CF393FE5F181FBFF7BCD33 /* Pods-UITableViewAgent_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UITableViewAgent_Example/Pods-UITableViewAgent_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UITableViewAgent_Example/Pods-UITableViewAgent_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDC4DD946CE1D177635074344AEF9062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA5B3530A9EC0A2F30A019EDBFA82A5 /* UITableViewAgent.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UITableViewAgent/UITableViewAgent-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UITableViewAgent/UITableViewAgent-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UITableViewAgent/UITableViewAgent.modulemap";
+				PRODUCT_MODULE_NAME = UITableViewAgent;
+				PRODUCT_NAME = UITableViewAgent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C8199A8D7244C7C06B9AAD3FC19239F /* Build configuration list for PBXNativeTarget "UITableViewAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFB21BA7130D1E0D43C7B3981A2FBD3 /* Debug */,
+				FDC4DD946CE1D177635074344AEF9062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2B6D6A437ACC359075575F9E3AFFA6 /* Build configuration list for PBXNativeTarget "TableViewReuse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A803D208CCA191A347B0EC28B35F76 /* Debug */,
+				E801D03216BB097CFB902FA3B11E8464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9427240432E3DF8B31D816019A65E6F4 /* Build configuration list for PBXNativeTarget "Pods-UITableViewAgent_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2BB4EE3FCC285E9E86231433A6E48EC /* Debug */,
+				EBC05F3AA7039738ADC59D5A84587D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED4A9BCB20B2E80FD3D2ED616C84FFB /* Build configuration list for PBXNativeTarget "Pods-UITableViewAgent_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E43CF6876D7096C5A9EF24B6DE281B /* Debug */,
+				4B12A3054240709D9CFB8AA9BEED7EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

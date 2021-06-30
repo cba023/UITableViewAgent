@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'UITableViewAgent_Example' do
+  pod 'UITableViewAgent', :path => '../'
+
+  target 'UITableViewAgent_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

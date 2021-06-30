@@ -1,0 +1,6 @@
+framework module Pods_UITableViewAgent_Tests {
+  umbrella header "Pods-UITableViewAgent_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
