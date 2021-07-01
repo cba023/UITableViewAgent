@@ -23,14 +23,13 @@ class ListViewModel {
     }
     
     func display() {
-        let display = UITableViewDisplay(sectionsCallback: { (sections) in
-            
+        let display = UITableViewDisplay({ (sections) in
             // 1.News
-            sections.append(UITableViewSectionDisplay(headerHeight: 45.0, autoHeaderHeight: false, headerReuse:.nibClass(NewsListTableHeaderView.self, viewCallback: { tabelView, section, header in
+            sections.append(UITableViewSectionDisplay(headerHeight: 45.0, autoHeaderHeight: false, headerReuse:.nibClass(NewsListTableHeaderView.self, { tabelView, section, header in
                 header.lblName.text = "新闻列表"
-            }), footerHeight: 50.0, autoFooterHeight: false, footerReuse: .nibClass(NewsListTableFooterView.self, viewCallback: { tableView, section, footer in
+            }), footerHeight: 50.0, autoFooterHeight: false, footerReuse: .nibClass(NewsListTableFooterView.self, { tableView, section, footer in
                 footer.lblDesc.text = "上面是新闻"
-            }), rowsCallback: { rows in
+            }), { rows in
                 for (_, value) in (self.news.value?.newslist!.enumerated())! {
                     let row = UITableViewRowDisplay(cellHeight: 60.0, autoCellHeight: true, cellType: NewsListTableViewCell.self, reuseType: .nib) { tableView, indexPath, cell in
                         cell.lblTitle.text = value.title
@@ -41,11 +40,11 @@ class ListViewModel {
             }))
 
             // 2.Appliances
-            sections.append(UITableViewSectionDisplay(headerHeight: 90.0, autoHeaderHeight: false, headerReuse:.nibClass(AppliancesTableHeaderView.self, viewCallback: {[weak self] tableView, section, header in
+            sections.append(UITableViewSectionDisplay(headerHeight: 90.0, autoHeaderHeight: false, headerReuse:.nibClass(AppliancesTableHeaderView.self, {[weak self] tableView, section, header in
                 guard let self = self else { return }
                 header.lblName.text = self.appliances.value?.name
-            }), footerHeight: CGFloat.leastNormalMagnitude, autoFooterHeight: false, footerReuse: .none, rowsCallback: { rows in
-                rows.append(UITableViewRowDisplay(cellHeight: 100.0, autoCellHeight: false, cellType: AppliancesTableViewCell.self, reuseType: .nib, cellForRowAtIndexPath: {[weak self] tableView, indexPath, cell in
+            }), footerHeight: CGFloat.leastNormalMagnitude, autoFooterHeight: false, footerReuse: .none, { rows in
+                rows.append(UITableViewRowDisplay(cellHeight: 100.0, autoCellHeight: false, cellType: AppliancesTableViewCell.self, reuseType: .nib, {[weak self] tableView, indexPath, cell in
                     guard let self = self else { return }
                     cell.lblName.text = self.appliances.value?.name
                     cell.lblColor.text = self.appliances.value?.color
@@ -54,14 +53,13 @@ class ListViewModel {
             }))
 
             // 3. Animal & Person
-            sections.append(UITableViewSectionDisplay(headerHeight: CGFloat.leastNormalMagnitude, autoHeaderHeight: false, headerReuse: .none, footerHeight: CGFloat.leastNormalMagnitude, autoFooterHeight: false, footerReuse: .none, rowsCallback: { rows in
+            sections.append(UITableViewSectionDisplay(headerHeight: CGFloat.leastNormalMagnitude, autoHeaderHeight: false, headerReuse: .none, footerHeight: CGFloat.leastNormalMagnitude, autoFooterHeight: false, footerReuse: .none, { rows in
                 for i in 0..<10 {
-                    rows.append(UITableViewRowDisplay(cellHeight: 80.0, autoCellHeight: false, cellType: PersonTCell.self, reuseType: .anyClass, cellForRowAtIndexPath: { tableView, indexPath, cell in
+                    rows.append(UITableViewRowDisplay(cellHeight: 80.0, autoCellHeight: false, cellType: PersonTCell.self, reuseType: .anyClass, { tableView, indexPath, cell in
                         cell.lblName.text = "人物 - \(i)"
                     }))
                 }
             }))
-           
         })
         self.tableViewAgent = UITableViewAgent(tableView: tableView, display: display)
         self.tableViewAgent.didSelectRowAtIndexPath = {(tableView, indexPath)

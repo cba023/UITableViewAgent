@@ -22,7 +22,7 @@ public class UITableViewRowDisplay {
     
     let cellForRowAtIndexPath: (_ tableView: UITableView, _ indexPath:IndexPath) -> UITableViewCell
     
-    public init<T: UITableViewCell>(cellHeight:CGFloat, autoCellHeight:Bool, cellType: T.Type, reuseType: ReusableViewRegisterType, cellForRowAtIndexPath:@escaping (_ tableView: UITableView, _ indexPath:IndexPath, _ cell: T) -> Void) {
+    public init<T: UITableViewCell>(cellHeight:CGFloat, autoCellHeight:Bool, cellType: T.Type, reuseType: ReusableViewRegisterType, _ cellForRowAtIndexPath:@escaping (_ tableView: UITableView, _ indexPath:IndexPath, _ cell: T) -> Void) {
         self.autoCellHeight = autoCellHeight
         self.cellHeight = self.autoCellHeight == true ? UITableView.automaticDimension: cellHeight;
         self.cellForRowAtIndexPath = {tableView, indexPath in
@@ -36,8 +36,8 @@ public class UITableViewRowDisplay {
 public class UITableViewSectionDisplay {
     
     public enum HeaderFooterReuseType<T: UIView, U: UITableViewHeaderFooterView> {
-        case nibClass(_ class: T.Type, viewCallback:((_ tableView: UITableView, _ section: Int, _ header: T) -> Void))
-        case anyClass(_ class: U.Type, viewCallback:((_ tableView: UITableView, _ section: Int, _ header: U) -> Void))
+        case nibClass(_ class: T.Type, _ viewCallback:((_ tableView: UITableView, _ section: Int, _ view: T) -> Void))
+        case anyClass(_ class: U.Type, _ viewCallback:((_ tableView: UITableView, _ section: Int, _ view: U) -> Void))
     }
     
     public var rows: [UITableViewRowDisplay] = []
@@ -54,7 +54,7 @@ public class UITableViewSectionDisplay {
     
     public var viewForFooter: ((_ tableView: UITableView, _ section: Int) -> UIView?)?
     
-    public init<T1: UIView, T2: UIView, U1: UITableViewHeaderFooterView, U2: UITableViewHeaderFooterView>(headerHeight: CGFloat, autoHeaderHeight: Bool, headerReuse: HeaderFooterReuseType<T1, U1>?, footerHeight: CGFloat, autoFooterHeight: Bool, footerReuse: HeaderFooterReuseType<T2, U2>?, rowsCallback: (_ rows: inout Array<UITableViewRowDisplay>) -> Void) {
+    public init<T1: UIView, T2: UIView, U1: UITableViewHeaderFooterView, U2: UITableViewHeaderFooterView>(headerHeight: CGFloat, autoHeaderHeight: Bool, headerReuse: HeaderFooterReuseType<T1, U1>?, footerHeight: CGFloat, autoFooterHeight: Bool, footerReuse: HeaderFooterReuseType<T2, U2>?, _ rowsCallback: (_ rows: inout Array<UITableViewRowDisplay>) -> Void) {
         self.autoHeaderHeight = autoHeaderHeight
         self.autoFooterHeight = autoFooterHeight
         self.headerHeight = self.autoHeaderHeight ? UITableView.automaticDimension : headerHeight
@@ -105,7 +105,7 @@ public class UITableViewDisplay {
     
     public var sections: [UITableViewSectionDisplay] = []
     
-    public init(sectionsCallback: (_ sections: inout Array<UITableViewSectionDisplay>) -> Void) {
+    public init(_ sectionsCallback: (_ sections: inout Array<UITableViewSectionDisplay>) -> Void) {
         sectionsCallback(&sections)
     }
 }
