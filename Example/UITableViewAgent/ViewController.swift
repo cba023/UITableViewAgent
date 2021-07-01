@@ -10,10 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let vc = ListViewController()
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        let vc = ListViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+    
+    @IBAction func goAction(_ sender: Any) {
+        let vc = SelectionViewController() //TraditionalListViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
 
 }
 

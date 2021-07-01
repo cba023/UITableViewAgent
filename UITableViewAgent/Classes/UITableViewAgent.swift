@@ -17,8 +17,8 @@ open class UITableViewAgent: NSObject, UITableViewDataSource, UITableViewDelegat
     public init(tableView: UITableView, display: UITableViewDisplay) {
         super.init()
         self.display = display
-        tableView.delegate = self
         tableView.dataSource = self
+        tableView.delegate = self
     }
 
     open func numberOfSections(in tableView: UITableView) -> Int {
@@ -76,14 +76,12 @@ open class UITableViewAgent: NSObject, UITableViewDataSource, UITableViewDelegat
     }
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.didSelectRowAtIndexPath?(tableView, indexPath)
         let sectionDisplay = self.display.sections[indexPath.section]
         let rowDisplay = sectionDisplay.rows[indexPath.row]
-        if self.didSelectRowAtIndexPath != nil {
-            self.didSelectRowAtIndexPath!(tableView, indexPath)
-        }
-        if rowDisplay.didSelectRowAtIndexPath != nil {
-            rowDisplay.didSelectRowAtIndexPath!(tableView, indexPath)
-        }
+        rowDisplay.didSelectRowAtIndexPath(tableView, indexPath)
+        
+        
     }
 }
 

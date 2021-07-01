@@ -6,6 +6,10 @@
 //  Copyright © 2021 CocoaPods. All rights reserved.
 //
 
+// 使用TableViewAgent方式实现TableView定制展示
+// 优点：代码量小，可阅读性好，灵活性强
+// 注意：由于使用了闭包，要避免因循环引用而导致内存泄漏
+
 import UIKit
 import UITableViewAgent
 
