@@ -113,7 +113,7 @@ tableViewAgent = UITableViewAgent(tableView: tableView, display: UITableViewDisp
 * 各行Cell高度灵活配置
 * 各行Cell类型与复用形式灵活配置
 * 各行Cell的数据展示灵活配置
-* 各行Cell点击响应时间的灵活配置
+* 各行Cell点击响应事件的灵活配置
 
 
 ```Swift
