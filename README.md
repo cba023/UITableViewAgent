@@ -137,7 +137,7 @@ for (i, person) in persons.enumerated() {
 }
 
 // 添加电器Cell展示电视信息
-row.append(UITableViewRowDisplay(cellHeight: 120, cellType: AppliancesTableViewCell.self, reuseType: .nib) { tableView, indexPath, cell in
+rows.append(UITableViewRowDisplay(cellHeight: 120, cellType: AppliancesTableViewCell.self, reuseType: .nib) { tableView, indexPath, cell in
     cell.lblName.text = "TV"
 } didSelectRowAtIndexPath: { tableView, indexPath, cell  in
 // 选中电器Cell后回调
