@@ -82,7 +82,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 
 * **代码量大**：实现简单的功能需要大量代码，影响开发效率。
 * **灵活性差**：配置数据和UI不够灵活，多个类的复用视图的处理需要繁琐判断，开发者需要自行计算索引值已经行数等不必要的数据。
-* **可阅读行差**：为了遵守TableView的代理函数，形式上写入大量代码，却没有直观地凸显出数据和UI。
+* **可阅读性差**：为了遵守TableView的代理函数，形式上写入大量代码，却没有直观地凸显出数据和UI。
 
 ### 使用UITableViewAgent实现TableView数据呈现
 
