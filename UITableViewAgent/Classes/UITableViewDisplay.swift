@@ -31,7 +31,7 @@ public class UITableViewRowDisplay {
             return cell
         }
         self.didSelectRowAtIndexPath = {tableView, indexPath in
-            let cell = tableView.cellForRow(at: indexPath) as! T
+            guard let cell = tableView.cellForRow(at: indexPath) as? T else { return }
             didSelectRowAtIndexPath?(tableView, indexPath, cell)
         }
     }
