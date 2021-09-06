@@ -28,6 +28,9 @@ class SelectionViewController: UIViewController {
                 
                 rows.append(UITableViewRowDisplay(cellHeight: 60, cellType: AppliancesTableViewCell.self, reuseType: .nib) { tableView, indexPath, cell in
                     cell.textLabel?.text = "Traditional code style implemention"
+                    cell.lblName.text = nil
+                    cell.lblColor.text = nil
+                    cell.lblPrice.text = nil
                 } didSelectRowAtIndexPath: {[weak self] tableView, indexPath, cell in
                     guard let self = self else { return }
                     let vc = TraditionalListViewController()
